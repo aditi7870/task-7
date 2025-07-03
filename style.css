@@ -1,0 +1,95 @@
+/* ===== Desktop Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    padding: 20px 30px;
+}
+
+.content {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #eaeaea;
+    padding: 15px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* ===== Responsive Styles (Mobile: max-width 768px) ===== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        margin: 5px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
+
+    .navbar h1 {
+        font-size: 24px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+}
